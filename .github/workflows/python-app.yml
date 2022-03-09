@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Download a file
       run: |
-        wget https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect/7.11.1/synopsys-detect-7.11.1.jar -O /tmp/
+        wget https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect/7.11.1/synopsys-detect-7.11.1.jar
     - name: my tests
       run: |
         whoami
