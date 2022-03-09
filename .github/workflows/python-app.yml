@@ -37,7 +37,7 @@ jobs:
     - name: my tests
       run: |
         whoami
-        python -m helloworld.py
+        python -m helloworld
     - name: Test with pytest
       run: |
         pytest
