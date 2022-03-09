@@ -34,8 +34,10 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Install dependencies
+    - name: Download a file
+      run: |
+        wget https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect/7.11.1/synopsys-detect-7.11.1.jar -O /tmp/
+    - name: my tests
       run: |
         whoami
-        df -h
-        wget https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect/7.11.1/synopsys-detect-7.11.1.jar
+        python -m helloworld.py
