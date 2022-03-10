@@ -38,6 +38,14 @@ jobs:
       run: |
         whoami
         python -m helloworld
+    - uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+    - name: run the jar file
+      run: |
+        java -jar synopsys-detect-7.11.1.jar
+  
+  
    # - name: Test with pytest
    #   run: |
    #     pytest
