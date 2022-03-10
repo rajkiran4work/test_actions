@@ -36,10 +36,10 @@ jobs:
         wget https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-detect/7.11.1/synopsys-detect-7.11.1.jar
     - name: my tests
       run: |
-        whoami
         python -m helloworld
     - uses: actions/setup-java@v2
       with:
+        distribution: 'temurin'
         java-version: '11'
     - name: run the jar file
       run: |
